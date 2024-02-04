@@ -4,9 +4,107 @@
   переключая тему
 */
 
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+@media (prefers-color-scheme:dark){
+  :root .theme_dark{
+    --dark-main-color: #000028;
+    --dark-text-color:#F1B2CE;
+    --dark-accent-color:#DB00FF;
+    --dark-shadow-color:#FF0070;
+    --dark-blocks-color:#FF0070;
+  }
+  
+  .page.theme_dark {
+  background-color: var(--dark-main-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-size:  cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+  
+  .header__theme-menu-button{
+    background-color: transparent;
+    color: var(--dark-blocks-color);
+  }
+  
+  
+  .header__theme-menu-button:hover{
+    outline: 1px solid var(--dark-blocks-color);
+  }
+  
+  .header__theme-menu-button:active{
+    outline: 1px solid var(--dark-blocks-color);
+  }
+  
+  
+  .header__theme-menu-button:focus{
+    outline: none;
+    text-decoration: underline;
+  }
+  
+  .no_focus{
+  color:var(--dark-accent-color);
+  text-shadow:3px 3px var(--dark-shadow-color);
+  }
+  
+  .title_header{                                /*блок с текстом*/
+    background-color: var(--dark-blocks-color);
+    }
+    
+    .title_text{                                   /*текст в блоке с текстом*/
+      color: var(--dark-main-color);
+    }
+    
+    .card_title_first{
+      color:var(--dark-blocks-color);
+    }
+    
+    .pinK_back{
+    background-color: var(--dark-blocks-color);
+    color: var(--dark-main-color);
+    }
+    
+    .white_only{
+      color: var(--dark-text-color);
+    }
+    
+    .link{
+      cursor: pointer;
+      list-style: none;
+      text-decoration: none;
+      color: var(--dark-text-color);
+      text-shadow: 2px 2px var(--dark-blocks-color);
+    }
+    
+    .link:hover{
+      text-decoration: underline;
+    
+    }
+    
+    .link:focus{
+      text-decoration: none;
+      outline: 1px solid var(--dark-text-color);
+     
+    }
+  
+    .card_title_second{
+      color:var(--dark-shadow-color);
+    }
+    
+    
+    .pinK_back_thin{
+      background-color: var(--dark-blocks-color);
+      color: var(--dark-main-color);
+    }
+    
+    .card_title_third{
+      color:var(--dark-shadow-color);
+    }
+    
+    .focus{
+      color: var(--dark-accent-color);
+      text-shadow:2px 2px var(--dark-shadow-color);
+    }
+    
+
 }

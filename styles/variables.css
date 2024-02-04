@@ -2,3 +2,20 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bakcground-color: #000028;
+  --font-family: "IBM Plex mono";
+  --big-title-size: 157px;
+  --medium-title-size: 130px;
+  --small-title-size: 120px;
+  --max-inline-size-title-medium-vw: 236px;
+  --inset-block-start-decorative-element-medium-vw: -176px;
+  --grid-row: 1/4;
+  --dark-main-color: #000028;
+  --dark-text-color: #f1b2ce;
+  --dark-accent-color: #db00ff;
+  --dark-shadow-color: #ff0070;
+  --dark-blocks-color: #ff0070;
+  --link-color: #ff0070;
+}
