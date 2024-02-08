@@ -4,7 +4,6 @@
 */
 
 :root {
-  --bakcground-color: #000028;
   --font-family: "IBM Plex mono";
   --big-title-size: 157px;
   --medium-title-size: 130px;
@@ -12,10 +11,17 @@
   --max-inline-size-title-medium-vw: 236px;
   --inset-block-start-decorative-element-medium-vw: -176px;
   --grid-row: 1/4;
-  --dark-main-color: #000028;
-  --dark-text-color: #f1b2ce;
-  --dark-accent-color: #db00ff;
-  --dark-shadow-color: #ff0070;
-  --dark-blocks-color: #ff0070;
+  --bakcground-color: #000028;
+  --main-color: #000028;
+  --title-block-color: #000028;
+  --main-text-color: #f1b2ce;
+  --focus-color: #db00ff;
+  --focus-shadow: #ff0070;
+  --link-shadow: #ff0070;
+  --nav-color: #ff0070;
+  --decoration-color: #ff0070;
+  --blocks-color: #ff0070;
+  --title-color: #ff0070;
   --link-color: #ff0070;
+  --background-img: url(../images/cover-image-dark.png);
 }

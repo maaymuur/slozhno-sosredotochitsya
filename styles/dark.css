@@ -3,108 +3,128 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_dark {
+  --bakcground-color: #000028;
+  --main-color: #000028;
+  --title-block-color: #000028;
+  --main-text-color: #f1b2ce;
+  --focus-color: #db00ff;
+  --focus-shadow: #ff0070;
+  --link-shadow: #ff0070;
+  --nav-color: #ff0070;
+  --decoration-color: #ff0070;
+  --blocks-color: #ff0070;
+  --title-color: #ff0070;
+  --link-color: #ff0070;
+  --background-img: url(../images/cover-image-dark.png);
+}
 
-@media (prefers-color-scheme:dark){
-  :root .theme_dark{
-    --dark-main-color: #000028;
-    --dark-text-color:#F1B2CE;
-    --dark-accent-color:#DB00FF;
-    --dark-shadow-color:#FF0070;
-    --dark-blocks-color:#FF0070;
-  }
-  
+@media screen and (prefers-color-scheme: dark) {
   .page.theme_dark {
-  background-color: var(--dark-main-color);
-  background-image: url(../images/cover-image-dark.png);
-  background-size:  cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-color: var(--bakcground-color);
+    background-image: var(--background-img);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
-  
-  .header__theme-menu-button{
+
+  .header__theme-menu-button {
     background-color: transparent;
-    color: var(--dark-blocks-color);
+    color: var(--nav-color);
   }
-  
-  
-  .header__theme-menu-button:hover{
-    outline: 1px solid var(--dark-blocks-color);
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--nav-color);
   }
-  
-  .header__theme-menu-button:active{
-    outline: 1px solid var(--dark-blocks-color);
+
+  .header__theme-menu-button:active {
+    outline: 1px solid var(--nav-color);
   }
-  
-  
-  .header__theme-menu-button:focus{
+
+  .header__theme-menu-button:focus {
     outline: none;
     text-decoration: underline;
   }
-  
-  .no_focus{
-  color:var(--dark-accent-color);
-  text-shadow:3px 3px var(--dark-shadow-color);
-  }
-  
-  .title_header{                                /*блок с текстом*/
-    background-color: var(--dark-blocks-color);
-    }
-    
-    .title_text{                                   /*текст в блоке с текстом*/
-      color: var(--dark-main-color);
-    }
-    
-    .card_title_first{
-      color:var(--dark-blocks-color);
-    }
-    
-    .pinK_back{
-    background-color: var(--dark-blocks-color);
-    color: var(--dark-main-color);
-    }
-    
-    .white_only{
-      color: var(--dark-text-color);
-    }
-    
-    .link{
-      cursor: pointer;
-      list-style: none;
-      text-decoration: none;
-      color: var(--dark-text-color);
-      text-shadow: 2px 2px var(--dark-blocks-color);
-    }
-    
-    .link:hover{
-      text-decoration: underline;
-    
-    }
-    
-    .link:focus{
-      text-decoration: none;
-      outline: 1px solid var(--dark-text-color);
-     
-    }
-  
-    .card_title_second{
-      color:var(--dark-shadow-color);
-    }
-    
-    
-    .pinK_back_thin{
-      background-color: var(--dark-blocks-color);
-      color: var(--dark-main-color);
-    }
-    
-    .card_title_third{
-      color:var(--dark-shadow-color);
-    }
-    
-    .focus{
-      color: var(--dark-accent-color);
-      text-shadow:2px 2px var(--dark-shadow-color);
-    }
-    
 
+  .no_focus {
+    color: var(--focus-color);
+    text-shadow: 3px 3px var(--focus-shadow);
+  }
+
+  .title_header {
+    /*блок с текстом*/
+    background-color: var(--blocks-color);
+  }
+
+  .title_text {
+    /*текст в блоке с текстом*/
+    color: var(--main-color);
+  }
+
+  .card_title_hard_to_concentrate {
+    color: var(--title-color);
+  }
+
+  .pinK_back {
+    background-color: var(--blocks-color);
+    color: var(--title-block-color);
+  }
+
+  .white_only {
+    color: var(--main-text-color);
+  }
+
+  button,
+  a {
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+
+  a {
+    cursor: pointer;
+    list-style: none;
+    text-shadow: 2px 2px var(--link-shadow);
+    text-decoration: none;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  a:hover {
+    border-bottom: 1px solid var(--main-text-color);
+  }
+
+  a:focus-visible {
+    border: 1px solid var(--main-text-color);
+  }
+
+
+  .card_title_what_reduces_concentration {
+    color: var(--title-color);
+  }
+
+  .pinK_back_thin {
+    background-color: var(--blocks-color);
+    color: var(--title-block-color);
+  }
+
+  .card_title_how_to_concentrate_group {
+    color: var(--title-color);
+  }
+
+  .focus {
+    color: var(--focus-color);
+    text-shadow: 2px 2px var(--focus-shadow);
+  }
+
+  .theme_light .decorative_element::before {
+    color: transparent;
+  }
+
+  .theme_light .decorative_element::after {
+    background-color: transparent;
+    box-shadow: 0 0 4px 2px transparent;
+  }
 }
