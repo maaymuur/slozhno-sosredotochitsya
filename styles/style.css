@@ -492,7 +492,6 @@ img {
   }
   .footer {
     min-inline-size: 100vh;
-    max-width: 768px;
     min-block-size: 1024px;
   }
 
@@ -666,5 +665,6 @@ img {
 
   .footer {
     min-inline-size: 100%;
+    min-block-size: 668px;
   }
 }
