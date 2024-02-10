@@ -40,6 +40,8 @@
   --title-color: var( --color-pink-1);
   --link-color: var( --color-pink-1);
   --border-color:var(--border-color-pink);
+  --border-color-grey:var(--border-color-black);
+  --border-color-light-pink:var(--border-color-pink);
   --background-img: url(../images/cover-image-dark.png);
 
 

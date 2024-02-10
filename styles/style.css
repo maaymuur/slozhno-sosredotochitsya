@@ -14,9 +14,9 @@
 }
 
 .header {
-  min-block-size: 100vh;
+  max-block-size: 100vh;
   max-inline-size: 100vw;
-  min-block-size: 768px;
+  min-block-size: 1024px;
   display: grid;
   grid-template-rows: [start] 1fr [line2]1fr [line3] minmax(auto, max-content);
   grid-template-columns: [start] 1fr [line2]1fr [line3] minmax(
@@ -72,6 +72,14 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--border-color);
+}
+
+.theme_light .header__theme-menu-button:hover {
+  border:1px solid var(--border-color-grey); 
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  border:1px solid var(--border-color-light-pink); 
 }
 
 
@@ -312,7 +320,6 @@ img {
 }
 
 .gallery-img_street {
-  grid-column-start: 2;
   grid-column-end: 4;
   grid-column-start: 2;
 }
@@ -361,7 +368,8 @@ img {
 
   .card_title_what_reduces_concentration {
     max-inline-size: 30%; /* Уменьшаем ширину блока */
-    word-wrap: break-word; /* Позволяет переносить слова, если они не помещаются в блок */
+    word-wrap: break-word;
+    margin-block-end: 21px; 
   }
 
   .header__theme-menu-list {
@@ -414,10 +422,6 @@ img {
     margin-bottom: 15px;
   }
 
-  .card_title_what_reduces_concentration {
-    margin-block-end: 21px;
-  }
-
   .card_title_how_to_concentrate_group {
     margin-block-start: 20px;
   }
@@ -466,6 +470,8 @@ img {
     grid-template-columns: 1fr;
     min-block-size: 668px;
     padding-bottom: 75px;
+    block-size: 100vh;
+    margin-block-start: 10px;
   }
 
   .no_focus {
@@ -502,7 +508,7 @@ img {
 
   .header__theme-menu {
     margin: 0px;
-    padding-top: 0px;
+    padding-top: 55px;
   }
 
   .header__theme-menu-list {
@@ -584,11 +590,6 @@ img {
     min-inline-size: 100%;
   }
 
-  .focus {
-    font-size: var(--small-title-size);
-    padding-top: 60%;
-  }
-
   .card_title_how_to_concentrate_group {
     max-inline-size: 500px;
     margin-block-end: 20px;
@@ -605,6 +606,7 @@ img {
   .image_grid {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     margin-block-end: 44px;
   }
 
