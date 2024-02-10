@@ -326,7 +326,7 @@ img {
 
 .footer {
   max-inline-size: 100vw;
-  min-block-size: 768px; 
+  min-block-size: 768px;
   height: 100vh;
 }
 
@@ -343,15 +343,14 @@ img {
 }
 
 @media (width < 1024px) {
-
-  .page{
+  .page {
     overflow-x: hidden;
   }
 
-  .header{
-  max-block-size: 100vh;
-  max-inline-size: 100vw;
-  min-block-size: 1024px;
+  .header {
+    max-block-size: 100vh;
+    max-inline-size: 100vw;
+    min-block-size: 1024px;
   }
 
   .decorated-zone::before {
@@ -378,7 +377,7 @@ img {
   }
 
   .card_title_what_reduces_concentration {
-    max-inline-size: 20%; 
+    max-inline-size: 20%;
     word-wrap: break-word;
     margin-block-end: 21px;
   }
@@ -408,12 +407,6 @@ img {
     margin-block-start: 104px;
     min-inline-size: auto;
     margin-block-end: 73px;
-  }
-
-  .focus {
-    font-size: 120px;
-    padding-top: 57%;
-    padding-left: 5px;
   }
 
   .title_header {
@@ -499,8 +492,14 @@ img {
   }
   .footer {
     min-inline-size: 100vh;
-    max-inline-size: 768px;
+    max-width: 768px;
     min-block-size: 1024px;
+  }
+
+  .focus {
+    font-size: 120px;
+    padding-top: 57%;
+    padding-left: 5px;
   }
 }
 
@@ -516,7 +515,7 @@ img {
     block-size: 100vh;
   }
 
-  .header_text{
+  .header_text {
     margin-block-start: 236px;
     margin-inline-start: 5px;
   }
@@ -540,7 +539,7 @@ img {
     font-family: var(--font-family), Arial, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 24px;
-}
+  }
 
   .decorated-zone::after {
     inset-inline-start: 0.7rem;
@@ -667,6 +666,5 @@ img {
 
   .footer {
     min-inline-size: 100%;
-    min-block-size: 668px;
   }
 }
