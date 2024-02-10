@@ -18,7 +18,9 @@
   max-inline-size: 100vw;
   min-block-size: 768px;
   display: grid;
-  grid-template-rows: [start] minmax(auto,max-content) [line2] minmax(auto,max-content) [line3] minmax(auto,max-content);
+  grid-template-rows:
+    [start] minmax(auto, max-content) [line2] minmax(auto, max-content)
+    [line3] minmax(auto, max-content);
   grid-template-columns: [start] 1fr [line2]1fr [line3] minmax(
       auto,
       max-content
