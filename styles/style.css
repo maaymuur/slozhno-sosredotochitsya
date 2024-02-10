@@ -91,8 +91,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  inset-inline-end: 1.3rem;
-  inset-block-start: 1.4rem;
+  inset-inline-end: 1rem;
+  inset-block-start: 1rem;
   width: 1.56488rem;
   height: 1.56244rem;
   border-top: 1px solid var(--decoration-color);
@@ -185,6 +185,7 @@
   grid-template-columns: minmax(auto, 31.9%) minmax(auto, max-content);
   column-gap: 20px;
   row-gap: 23px;
+  padding-right: 20px;
 }
 
 .card_title_hard_to_concentrate {
@@ -286,9 +287,10 @@ a:focus-visible {
 .image_grid {
   display: grid;
   grid-template-columns: repeat(3/315px);
+  grid-template-rows: auto;
   gap: 19px;
-  margin-block-end: 60px;
   padding-right: 20px;
+  margin-block-end: 60px;
 }
 
 .stroke_img {
@@ -324,7 +326,7 @@ img {
 
 .footer {
   max-inline-size: 100vw;
-  min-block-size: 768px; /*Минимальная высота подвала, нужно добавить*/
+  min-block-size: 768px; 
   height: 100vh;
 }
 
@@ -341,8 +343,10 @@ img {
 }
 
 @media (width < 1024px) {
-  .header {
-    padding-bottom: 163px;
+  .header{
+  max-block-size: 100vh;
+  max-inline-size: 100vw;
+  min-block-size: 1024px;
   }
 
   .decorated-zone::before {
@@ -392,6 +396,7 @@ img {
 
   .header_text {
     margin-inline-start: 5px;
+    margin-block-start: 337px;
   }
 
   .no_focus {
@@ -411,7 +416,6 @@ img {
     margin-inline-end: 15px;
     margin-block-start: 57px;
     grid-column: 2/3;
-    margin-block-end: 39px;
   }
 
   .title_text {
@@ -422,8 +426,8 @@ img {
   }
 
   .main {
-    margin-block-start: 66px;
-    padding-right: 15px;
+    margin-block-start: 73px;
+    padding-right: 0px;
   }
 
   .card_title_hard_to_concentrate {
@@ -481,6 +485,7 @@ img {
     display: block;
     margin-block-end: 20px;
     margin-block-start: 59px;
+    padding-right: 15px;
   }
 
   .what_reduces_concentration .white_only {
@@ -489,7 +494,7 @@ img {
   }
   .footer {
     min-inline-size: 100vh;
-    min-inline-size: 768px;
+    max-inline-size: 768px;
     min-block-size: 1024px;
   }
 }
@@ -501,9 +506,14 @@ img {
         max-content
       );
     grid-template-columns: 1fr;
-    min-block-size: 668px;
+    min-block-size: 652px;
     padding-bottom: 75px;
     block-size: 100vh;
+  }
+
+  .header_text{
+    margin-block-start: 222px;
+    margin-inline-start: 5px;
   }
 
   .no_focus {
@@ -511,14 +521,20 @@ img {
     line-height: 82.5%;
     margin-inline-start: 5px;
     margin-block-end: 53px;
+    letter-spacing: -4px;
   }
 
   .title_header {
     margin-inline-start: 10px;
-    margin-inline-end: 9px;
     margin-top: 0px;
     margin-block-end: 0px;
   }
+
+  .title_text {
+    font-family: var(--font-family), Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
 
   .decorated-zone::after {
     inset-inline-start: 0.7rem;
@@ -527,7 +543,7 @@ img {
 
   .decorated-zone::before {
     inset-block-start: 0.5rem;
-    inset-inline-end: 0.5rem;
+    inset-inline-end: 1rem;
   }
   .decorative_element::before {
     inset-inline-end: 2.6rem;
@@ -541,7 +557,7 @@ img {
 
   .header__theme-menu {
     margin: 0px;
-    padding-top: 55px;
+    padding-top: 42px;
   }
 
   .header__theme-menu-list {
@@ -552,12 +568,12 @@ img {
     margin: 0px;
     row-gap: 6px;
     padding-top: 30px;
-    margin-right: 4px;
+    margin-right: 13px;
     margin-bottom: 50px;
   }
 
   .main {
-    margin-block-start: 43px;
+    margin-block-start: 37px;
     padding-left: 10px;
     padding-right: 9px;
   }
@@ -612,10 +628,6 @@ img {
     min-inline-size: auto;
   }
 
-  .footer {
-    min-inline-size: 100%;
-  }
-
   .card_title_how_to_concentrate_group {
     max-inline-size: 500px;
     margin-block-end: 20px;
@@ -636,9 +648,6 @@ img {
     margin-block-end: 44px;
   }
 
-  .card {
-    min-inline-size: auto;
-  }
   .focus {
     font-size: var(--small-title-size);
     padding-top: 68%;
@@ -646,6 +655,7 @@ img {
   }
 
   .footer {
+    min-inline-size: 100%;
     min-block-size: 668px;
   }
 }
