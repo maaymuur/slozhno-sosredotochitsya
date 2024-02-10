@@ -3,23 +3,41 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root .theme_dark {
-  --bakcground-color: #000028;
-  --main-color: #000028;
-  --title-block-color: #000028;
-  --main-text-color: #f1b2ce;
-  --focus-color: #db00ff;
-  --focus-shadow: #ff0070;
-  --link-shadow: #ff0070;
-  --nav-color: #ff0070;
-  --decoration-color: #ff0070;
-  --blocks-color: #ff0070;
-  --title-color: #ff0070;
-  --link-color: #ff0070;
+
+.page.theme_dark {
+  --bakcground-color: var(--color-dark);
+  --main-color: var(--color-dark);
+  --title-block-color: var(--color-dark);
+  --main-text-color: var(--color-pink-2);
+  --focus-color: var(--color-purple);
+  --focus-shadow: var(--color-pink-1);
+  --link-shadow: var(--color-pink-1);
+  --nav-color: var(--color-pink-1);
+  --decoration-color: var(--color-pink-1);
+  --blocks-color: var(--color-pink-1);
+  --title-color: var(--color-pink-1);
+  --link-color: var(--color-pink-1);
   --background-img: url(../images/cover-image-dark.png);
 }
 
-@media screen and (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
+  :root .theme_dark {
+    --bakcground-color: var(--color-dark);
+    --main-color: var(--color-dark);
+    --title-block-color: var(--color-dark);
+    --main-text-color: var(--color-pink-2);
+    --focus-color: var(--color-purple);
+    --focus-shadow: var(--color-pink-1);
+    --link-shadow: var(--color-pink-1);
+    --nav-color: var(--color-pink-1);
+    --decoration-color: var(--color-pink-1);
+    --blocks-color: var(--color-pink-1);
+    --title-color: var(--color-pink-1);
+    --link-color: var(--color-pink-1);
+    --border-color: var(--border-color-pink);
+    --background-img: url(../images/cover-image-dark.png);
+  }
+
   .page.theme_dark {
     background-color: var(--bakcground-color);
     background-image: var(--background-img);
@@ -34,17 +52,18 @@
     color: var(--nav-color);
   }
 
-  .header__theme-menu-button:hover {
-    outline: 1px solid var(--nav-color);
+  .header__theme-menu-button:active {
+    border: 1px solid var(--nav-color);
+    text-decoration: none;
   }
 
-  .header__theme-menu-button:active {
-    outline: 1px solid var(--nav-color);
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--border-color);
   }
 
   .header__theme-menu-button:focus {
-    outline: none;
-    text-decoration: underline;
+    border-bottom: 1px solid var(--nav-color);
+    text-decoration: none;
   }
 
   .no_focus {
@@ -86,7 +105,7 @@
   a {
     cursor: pointer;
     list-style: none;
-    text-shadow: 2px 2px var(--link-shadow);
+    text-shadow: 2px 2px var(--blocks-color);
     text-decoration: none;
     outline: none;
     transition: all 0.3s ease;
@@ -99,7 +118,6 @@
   a:focus-visible {
     border: 1px solid var(--main-text-color);
   }
-
 
   .card_title_what_reduces_concentration {
     color: var(--title-color);

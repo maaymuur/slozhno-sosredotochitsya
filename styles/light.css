@@ -3,35 +3,64 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root .theme_light {
-  --bakcground-color: #fff1f7;
-  --main-color: #353430;
-  --title-block-color: #000028;
-  --main-text-color: #353430;
-  --focus-color: #ffc2e6;
-  --focus-shadow: #ff0070;
-  --link-shadow: #ff0070;
-  --nav-color: #353430;
-  --decoration-color: #353430;
-  --blocks-color: #ff8dcb;
-  --title-color: #353430;
-  --link-color: #ff8dcb;
+
+.page.theme_light {
+
+  --background-color: var(--color-light-theme);
+  --main-color: var(--color-grey);
+  --title-block-color: var(--color-dark);
+  --main-text-color: var(--color-grey);
+  --focus-color: var(--color-pink-2);
+  --focus-shadow:  var( --color-pink-1);
+  --link-shadow:  var( --color-pink-1);
+  --nav-color: var(--color-grey);
+  --decoration-color: var(--color-grey);
+  --blocks-color: var(--color-pink-3);
+  --title-color: var(--color-grey);
   --background-img: url(../images/cover-image-light.png);
 }
 
-@media screen and (prefers-color-scheme: light) {
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: var(--color-light-theme);
+    --main-color: var(--color-grey);
+    --title-block-color: var(--color-dark);
+    --main-text-color: var(--color-grey);
+    --focus-color: var(--color-pink-2);
+    --focus-shadow:  var( --color-pink-1);
+    --link-shadow:  var( --color-pink-1);
+    --nav-color: var(--color-grey);
+    --decoration-color: var(--color-grey);
+    --blocks-color: var(--color-pink-3);
+    --title-color: var(--color-grey);
+    --border-color:var(--border-color-black);
+    --background-img: url(../images/cover-image-light.png);
+  }
+
   .page.theme_light {
     background-color: var(--bakcground-color);
     background-image: var(--background-img);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
   }
 
   .header__theme-menu-button {
     background-color: transparent;
     color: var(--nav-color);
+  }
+
+  .header__theme-menu-button:active {
+    border: 1px solid var(--nav-color);
+    text-decoration: none;
+  }
+
+  .header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--nav-color);
+    text-decoration: none;
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid var(--border-color);
   }
 
   .no_focus {
@@ -73,7 +102,7 @@
   a {
     cursor: pointer;
     list-style: none;
-    text-shadow: 2px 2px var(--link-shadow);
+    text-shadow: 2px 2px var(--blocks-color);
     text-decoration: none;
     outline: none;
     transition: all 0.3s ease;
@@ -87,7 +116,6 @@
     border: 1px solid var(--main-text-color);
   }
 
-  
   button:focus {
     border-bottom: 1px solid var(--nav-color);
   }
@@ -109,7 +137,7 @@
     color: var(--focus-color);
     text-shadow: 2px 2px var(--focus-shadow);
   }
-  
+
   .theme_auto .decorative_element::before {
     color: transparent;
   }
