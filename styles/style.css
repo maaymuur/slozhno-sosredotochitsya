@@ -343,6 +343,11 @@ img {
 }
 
 @media (width < 1024px) {
+
+  .page{
+    overflow-x: hidden;
+  }
+
   .header{
   max-block-size: 100vh;
   max-inline-size: 100vw;
@@ -354,7 +359,7 @@ img {
   }
 
   .decorated-zone::after {
-    inset-block-end: 0.7rem;
+    inset-block-end: 1.2rem;
   }
 
   .decorative_element::before {
@@ -369,11 +374,11 @@ img {
 
   .header__theme-menu {
     margin: 0px;
-    padding-top: 192px;
+    padding-top: 189px;
   }
 
   .card_title_what_reduces_concentration {
-    max-inline-size: 30%; /* Уменьшаем ширину блока */
+    max-inline-size: 20%; 
     word-wrap: break-word;
     margin-block-end: 21px;
   }
@@ -395,14 +400,14 @@ img {
   }
 
   .header_text {
-    margin-inline-start: 5px;
-    margin-block-start: 337px;
+    margin-block-start: 329px;
   }
 
   .no_focus {
     font-size: 120px;
     margin-block-start: 104px;
     min-inline-size: auto;
+    margin-block-end: 73px;
   }
 
   .focus {
@@ -426,8 +431,9 @@ img {
   }
 
   .main {
-    margin-block-start: 73px;
+    margin-block-start: 56px;
     padding-right: 0px;
+    padding-left: 13px;
   }
 
   .card_title_hard_to_concentrate {
@@ -439,25 +445,23 @@ img {
   }
 
   .hard_to_concetrate .pinK_back {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   .hard_to_concetrate_group {
     column-gap: 24px;
+    padding-right: 15px;
   }
 
   .card_title_how_to_concentrate_group {
     margin-block-start: 20px;
   }
 
-  .how_to_concentrate {
-    margin-block-start: 63px;
-  }
-
   .how_to_concentrate_group {
     display: grid;
     grid-template-columns: [start] minmax(auto, 236px) [line2] auto;
     column-gap: 23px;
+    margin-block-start: 30px;
   }
 
   .how_to_concentrate.pinK_back {
@@ -469,11 +473,11 @@ img {
   }
 
   .pinK_back_thin {
-    margin-block-end: 10px;
+    margin-block-end: 7px;
   }
 
   .white_only {
-    line-height: 23.3px;
+    line-height: 23.4px;
     margin-block-start: 0px;
   }
 
@@ -483,13 +487,14 @@ img {
 
   .what_reduces_concentration {
     display: block;
-    margin-block-end: 20px;
-    margin-block-start: 59px;
+    margin-block-end: 0px;
+    margin-block-start: 50px;
     padding-right: 15px;
+    max-block-size: 20%;
   }
 
   .what_reduces_concentration .white_only {
-    margin-block-start: 10px;
+    margin-block-start: 6px;
     margin-block-end: 22px;
   }
   .footer {
@@ -506,13 +511,13 @@ img {
         max-content
       );
     grid-template-columns: 1fr;
-    min-block-size: 652px;
+    min-block-size: 668px;
     padding-bottom: 75px;
     block-size: 100vh;
   }
 
   .header_text{
-    margin-block-start: 222px;
+    margin-block-start: 236px;
     margin-inline-start: 5px;
   }
 
@@ -528,6 +533,7 @@ img {
     margin-inline-start: 10px;
     margin-top: 0px;
     margin-block-end: 0px;
+    margin-inline-end: 10px;
   }
 
   .title_text {
@@ -543,7 +549,7 @@ img {
 
   .decorated-zone::before {
     inset-block-start: 0.5rem;
-    inset-inline-end: 1rem;
+    inset-inline-end: 0.5rem;
   }
   .decorative_element::before {
     inset-inline-end: 2.6rem;
@@ -568,12 +574,12 @@ img {
     margin: 0px;
     row-gap: 6px;
     padding-top: 30px;
-    margin-right: 13px;
+    margin-right: 5px;
     margin-bottom: 50px;
   }
 
   .main {
-    margin-block-start: 37px;
+    margin-block-start: 42px;
     padding-left: 10px;
     padding-right: 9px;
   }
@@ -599,6 +605,7 @@ img {
 
   .hard_to_concetrate_group {
     display: block;
+    padding-right: 3px;
   }
 
   .card_title_what_reduces_concentration {
@@ -618,10 +625,12 @@ img {
   .what_reduces_concentration {
     display: block;
     margin-block-start: 50px;
+    padding-right: 3px;
   }
 
   .what_reduces_concentration .white_only {
     margin-block-end: 23px;
+    margin-block-start: 9px;
   }
 
   .card {
@@ -639,6 +648,7 @@ img {
 
   .how_to_concentrate_group {
     display: block;
+    padding-right: 3px;
   }
 
   .image_grid {
@@ -646,6 +656,7 @@ img {
     flex-direction: column;
     gap: 10px;
     margin-block-end: 44px;
+    padding-right: 2px;
   }
 
   .focus {
