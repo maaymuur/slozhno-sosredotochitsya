@@ -19,12 +19,20 @@
   min-block-size: 768px;
   display: grid;
   grid-template-rows:
-    [start] minmax(auto, max-content) [line2] minmax(auto, max-content)
-    [line3] minmax(auto, max-content);
+    [start] 1fr [line2] min-content
+    [line3] 1fr;
   grid-template-columns: [start] 1fr [line2]1fr [line3] minmax(
       auto,
       max-content
     );
+}
+
+.header_text {
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2;
+  justify-items: start;
+  align-items: end;
 }
 
 .header__theme-menu {
@@ -146,14 +154,6 @@ button:focus-visible {
   inset-block-start: 1.6rem;
 }
 
-.header_text {
-  display: grid;
-  grid-column: 1/4;
-  grid-row: 1;
-  justify-items: start;
-  align-items: end;
-  margin-block-start: 284px;
-}
 
 .no_focus {
   font-family: var(--font-family), Arial, Helvetica, sans-serif;
@@ -161,12 +161,16 @@ button:focus-visible {
   font-weight: 700;
   color: var(--focus-color);
   text-shadow: 3px 3px var(--focus-shadow);
-  margin-block-end: 77px;
 }
 
 .title_header {
+  display: grid;
   margin-inline-end: 21px;
   grid-column: 2/4;
+  grid-row: 3;
+  justify-self: end;
+  align-self: center; 
+  padding-bottom: 57px;
 }
 
 .title_text {
@@ -364,8 +368,8 @@ img {
 @media (width < 1024px) {
   .header {
     grid-template-rows:
-      [start] minmax(auto, max-content) [line2]minmax(auto, max-content)
-      [line3]minmax(auto, max-content);
+      [start] 1fr [line2]min-content
+      [line3]1fr;
     max-block-size: 100vh;
     max-inline-size: 100vw;
     min-block-size: 1024px;
@@ -391,7 +395,9 @@ img {
 
   .header__theme-menu {
     margin: 0px;
-    padding-top: 191px;
+    padding-top: 49px;
+    display: grid;
+    align-self: center;
   }
 
   .card_title_what_reduces_concentration {
@@ -409,7 +415,7 @@ img {
     row-gap: 6px;
     padding-top: 0px;
     margin-right: 17px;
-    margin-bottom: 39px;
+
   }
 
   .header__theme-menu-button {
@@ -420,7 +426,6 @@ img {
     font-size: 120px;
     min-inline-size: auto;
     margin-block-end: 0px;
-    margin-block-start: 107px;
   }
 
   .header_text {
@@ -435,9 +440,9 @@ img {
   .title_header {
     margin-inline-start: auto;
     margin-inline-end: 21px;
-    margin-block-start: 130px;
     grid-column: 2/3;
     grid-row: 3/4;
+    padding-bottom: 49px;
   }
 
   .title_text {
@@ -535,10 +540,7 @@ img {
 
 @media (width < 768px) {
   .header {
-    grid-template-rows: [start] minmax(auto, max-content) [line2]minmax(
-        auto,
-        max-content
-      );
+    grid-template-rows: [start] 1fr [line2]min-content [line3]1fr;
     grid-template-columns: auto;
     min-block-size: 668px;
     padding-bottom: 75px;
