@@ -14,15 +14,16 @@
 
   --color-dark: #000028;
 
-  --color-pink-1:#ff0070 ;
-  --color-pink-2:#f1b2ce;
+  --color-pink-bright:#ff0070 ;
+  --color-pink-light:#f1b2ce;
   --color-purple:#db00ff;
 
   --color-light-theme:#fff1f7;
   --color-grey:#353430;
-  --color-pink-3:#ff8dcb;
+  --color-pink-medium:#ff8dcb;
   --border-color-pink:rgba(255, 0, 112, 0.4);
   --border-color-black:rgba(50, 49, 45, 0.4);
+  --text-shadow-light:#ff8dcb;
   
 
 
@@ -30,18 +31,19 @@
   --bakcground-color: var(--color-dark);
   --main-color: var(--color-dark);
   --title-block-color: var(--color-dark);
-  --main-text-color: var(--color-pink-2);
+  --main-text-color: var(--color-pink-light);
   --focus-color: var(--color-purple);
-  --focus-shadow: var( --color-pink-1);
-  --link-shadow: var( --color-pink-1);
-  --nav-color: var( --color-pink-1);
-  --decoration-color: var( --color-pink-1);
-  --blocks-color: var( --color-pink-1);
-  --title-color: var( --color-pink-1);
-  --link-color: var( --color-pink-1);
+  --focus-shadow: var( --color-pink-bright);
+  --link-shadow: var( --color-pink-bright);
+  --nav-color: var( --color-pink-bright);
+  --decoration-color: var( --color-pink-bright);
+  --blocks-color: var( --color-pink-bright);
+  --title-color: var( --color-pink-bright);
+  --link-color: var( --color-pink-bright);
   --border-color:var(--border-color-pink);
   --border-color-grey:var(--border-color-black);
   --border-color-light-pink:var(--border-color-pink);
+  --text-shadow-light-theme:var(--text-shadow-light);
   --background-img: url(../images/cover-image-dark.png);
 
 

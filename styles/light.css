@@ -10,12 +10,12 @@
   --main-color: var(--color-grey);
   --title-block-color: var(--color-dark);
   --main-text-color: var(--color-grey);
-  --focus-color: var(--color-pink-2);
-  --focus-shadow:  var( --color-pink-1);
-  --link-shadow:  var( --color-pink-1);
+  --focus-color: var(--color-pink-light);
+  --focus-shadow:  var(--color-pink-bright);
+  --link-shadow:  var(--color-pink-bright);
   --nav-color: var(--color-grey);
   --decoration-color: var(--color-grey);
-  --blocks-color: var(--color-pink-3);
+  --blocks-color: var(--color-pink-medium);
   --title-color: var(--color-grey);
   --background-img: url(../images/cover-image-light.png);
 }
@@ -28,12 +28,12 @@
     --main-color: var(--color-grey);
     --title-block-color: var(--color-dark);
     --main-text-color: var(--color-grey);
-    --focus-color: var(--color-pink-2);
-    --focus-shadow:  var( --color-pink-1);
-    --link-shadow:  var(--color-pink-3);
+    --focus-color: var(--color-pink-light);
+    --focus-shadow:  var(--color-pink-bright);
+    --link-shadow:  var(--color-pink-medium);
     --nav-color: var(--color-grey);
     --decoration-color: var(--color-grey);
-    --blocks-color: var(--color-pink-3);
+    --blocks-color: var(--color-pink-medium);
     --title-color: var(--color-grey);
     --border-color:var(--border-color-black);
     --background-img: url(../images/cover-image-light.png);

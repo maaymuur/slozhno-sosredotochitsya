@@ -8,15 +8,15 @@
   --bakcground-color: var(--color-dark);
   --main-color: var(--color-dark);
   --title-block-color: var(--color-dark);
-  --main-text-color: var(--color-pink-2);
+  --main-text-color: var(--color-pink-light);
   --focus-color: var(--color-purple);
-  --focus-shadow: var(--color-pink-1);
-  --link-shadow: var(--color-pink-1);
-  --nav-color: var(--color-pink-1);
-  --decoration-color: var(--color-pink-1);
-  --blocks-color: var(--color-pink-1);
-  --title-color: var(--color-pink-1);
-  --link-color: var(--color-pink-1);
+  --focus-shadow: var(--color-pink-bright);
+  --link-shadow: var(--color-pink-bright);
+  --nav-color: var(--color-pink-bright);
+  --decoration-color: var(--color-pink-bright);
+  --blocks-color: var(--color-pink-bright);
+  --title-color: var(--color-pink-bright);
+  --link-color: var(--color-pink-bright);
   --background-img: url(../images/cover-image-dark.png);
 }
 
@@ -25,15 +25,15 @@
     --bakcground-color: var(--color-dark);
     --main-color: var(--color-dark);
     --title-block-color: var(--color-dark);
-    --main-text-color: var(--color-pink-2);
+    --main-text-color: var(--color-pink-light);
     --focus-color: var(--color-purple);
-    --focus-shadow: var(--color-pink-1);
-    --link-shadow: var(--color-pink-1);
-    --nav-color: var(--color-pink-1);
-    --decoration-color: var(--color-pink-1);
-    --blocks-color: var(--color-pink-1);
-    --title-color: var(--color-pink-1);
-    --link-color: var(--color-pink-1);
+    --focus-shadow: var(--color-pink-bright);
+    --link-shadow: var(--color-pink-bright);
+    --nav-color: var(--color-pink-bright);
+    --decoration-color: var(--color-pink-bright);
+    --blocks-color: var(--color-pink-bright);
+    --title-color: var(--color-pink-bright);
+    --link-color: var(--color-pink-bright);
     --border-color: var(--border-color-pink);
     --background-img: url(../images/cover-image-dark.png);
   }
